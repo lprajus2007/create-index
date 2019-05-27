@@ -21,6 +21,7 @@ export default (directoryPaths, options = {}) => {
   } else {
     log('Recursive:', options.recursive ? chalk.green('true') : chalk.red('false'));
     log('Ignore unsafe:', options.ignoreUnsafe ? chalk.green('true') : chalk.red('false'));
+    log('Ignore safety check:', options.ignoreSafetyCheck ? chalk.green('true') : chalk.red('false'));
     log('Extensions:', chalk.green(options.extensions));
   }
 
@@ -51,6 +52,7 @@ export default (directoryPaths, options = {}) => {
       config,
       extensions: options.extensions,
       ignoreDirectories: options.ignoreDirectories,
+      ignoreSafetyCheck: options.ignoreSafetyCheck,
       silent: options.ignoreUnsafe
     });
 

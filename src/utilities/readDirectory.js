@@ -79,7 +79,8 @@ export default (directoryPath, options = {}) => {
   const {
     extensions = ['js'],
     config = {},
-    ignoreDirectories = false
+    ignoreDirectories = false,
+    ignoreSafetyCheck = false
   } = options;
 
   let children;
@@ -90,7 +91,7 @@ export default (directoryPath, options = {}) => {
     const absolutePath = path.resolve(directoryPath, fileName);
     const isDirectory = fs.statSync(absolutePath).isDirectory();
 
-    if (!isSafeName(fileName)) {
+    if (!ignoreSafetyCheck && !isSafeName(fileName)) {
       return false;
     }
 

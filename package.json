@@ -1,8 +1,8 @@
 {
   "author": {
-    "email": "gajus@gajus.com",
-    "name": "Gajus Kuizinas",
-    "url": "http://gajus.com"
+    "email": "lprajus2007@gmail.com",
+    "name": "Satya Sampathirao",
+    "url": "https://www.satyalak.me"
   },
   "bin": "./dist/bin/create-index.js",
   "dependencies": {
@@ -38,10 +38,10 @@
   ],
   "license": "BSD-3-Clause",
   "main": "./dist/index.js",
-  "name": "create-index",
+  "name": "create-index-plus",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gajus/create-index"
+    "url": "https://github.com/lprajus2007/create-index.git"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production babel --source-maps --copy-files ./src --out-dir ./dist",

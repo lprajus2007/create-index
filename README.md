@@ -89,6 +89,9 @@ Options:
   --ignoreDirectories, -d  Ignores importing directories into the index file,
                            even if they have a safe "index.js".
                                                       [boolean] [default: false]
+  --ignoreSafetyCheck, -s  Ignores the file name safety check and allows hyphens,
+                           converts filenames with hyphens into camelCase exports.
+                                                      [boolean] [default: false]
   --update, -u             Updates only previously created index files
                            (recursively).             [boolean] [default: false]
   --banner                 Add a custom banner at the top of the index file

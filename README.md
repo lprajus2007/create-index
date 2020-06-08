@@ -6,7 +6,7 @@
 
 `create-index-plus` program creates (and maintains) ES6 `./index.js` file in target directories that imports and exports sibling files and directories.
 
-This project is the same that `create-index` but has the support of "kebab-case" for files.
+This project is the same as `create-index` but has support for "kebab-case" for files.
 
 ## Example
 

@@ -34,6 +34,14 @@ const argv = yargs
     }
   })
   .options({
+    ignoreSafetyCheck: {
+      alias: 's',
+      default: false,
+      description: '[WARNING] Ignores file name safety conventions. Unsafe names with hyphen are camelcased.',
+      type: 'boolean'
+    }
+  })
+  .options({
     ignoreDirectories: {
       alias: 'd',
       default: false,
